@@ -1,0 +1,64 @@
+#adfinixAdLogo {
+    background: #ededed;
+    opacity: 0.8;
+    transition: 0.2s;
+    position: absolute;
+    bottom: 0;
+    display: inline-flex;
+    left: 0;
+    text-decoration: none;
+    padding: 3px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+       Roboto, Ubuntu, "Helvetica Neue", Oxygen, Cantarell, sans-serif;
+    align-items: center;
+    /* z-index: 1000; */
+    z-index: 2;
+ }
+
+ #adfinixAdLogo img {
+    width: 15px;
+    height: 15px;
+ }
+
+ #adfinixAdLogo span {
+    width: 0px;
+    transition: 0.2s;
+    margin-left: 2px;
+    display: inline-block;
+    font-size: 10px;
+    visibility: hidden;
+ }
+
+ #adfinixAdLogo:hover {
+    opacity: 1;
+ }
+
+ #adfinixAdLogo:hover span {
+    width: 35px;
+    visibility: visible;
+ }
+
+
+ /* 320 x 100 media queries for responsive */
+ @media (max-width: 424px) {
+    body {
+        overflow: hidden;
+        /* width: fit-content; */
+        transform: scale(.85, .85);
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        transform-origin: top left;
+    }
+  }
+  @media (max-width: 250px) {
+    body {
+        overflow: hidden;
+        /* width: fit-content; */
+        transform: scale(0.74, 0.74);
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        transform-origin: top left;
+    }
+  }
