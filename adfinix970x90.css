@@ -59,6 +59,17 @@
         transform-origin: top left;
     }
   }
+  @media (max-width: 500px) {
+    body {
+        overflow: hidden;
+        /* width: fit-content; */
+        transform: scale(0.46, 0.46);
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        transform-origin: top left;
+    }
+  }
   @media (max-width: 468px) {
     body {
         overflow: hidden;
